@@ -1,6 +1,6 @@
 body {
 	text-align:center;
-	background:#666;
+	background:#00b9ff;
 	font-family: 'Open Sans', sans-serif;
 	margin-bottom:100px;
 }
@@ -28,7 +28,7 @@ a:hover{text-decoration: underline;}
 	font-size:12px;
 	height:18px;
 	display:inline-block;
-	color:white;
+	color:#000000;
 }
 
 #ggo12:hover{
@@ -78,7 +78,7 @@ div.block_label {
 	line-height:10px;
 	ztext-indent:-999px;
 	border-radius:5px;
-	border: 2px solid white;
+	border: 2px solid #000000;
 	background:#caf;
 	cursor:default;
 }
@@ -124,12 +124,12 @@ div.block_label {
 
 #controls  #reset:hover {
 	background:#BB5050;
-	border: 1px solid red;
+	border: 1px solid #ff0000;
 }
 
 .elem {
-	width:32px;
-	height:32px;
+	width:40px;
+	height:40px;
 	float:left;
 	margin:3px;
 	overflow:hidden;
@@ -141,13 +141,13 @@ div.block_label {
 }
 
 #inventory .elem {
-	border: 1px solid red;
+	border: 1px solid #ff0000;
 	background:#ffa;
 }
 
 #play .elem {
 	border: 1px solid #a2f;
-	background:white;
+	background:#000000;
 }
 
 
