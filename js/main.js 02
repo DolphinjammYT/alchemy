@@ -4,30 +4,54 @@ var inventory = [ 'Air', 'Water', 'Fire', 'Earth' ];
 
 // List of possible combos to create new elements
 var COMBO = {
-	'Air'   : { info: "An ancient classical element" },
-	'Water' : { info: "An ancient classical element" },
-	'Fire'  : { info: "An ancient classical element" },
-	'Earth' : { info: "An ancient classical element" },
+	'Air'   : { info: "An ancient, Minor classical element" },
+	'Water' : { info: "An ancient, Minor classical element" },
+	'Fire'  : { info: "An ancient, Minor classical element" },
+	'Earth' : { info: "An ancient, Minor classical element" },
 	
 	'Mud' : { info: "It's muddy.", needs: [ 'Water', 'Earth' ] },
+	'Gas' : { info: "Woah, That stinks!", needs: [ 'Air', 'Air' ] },
 	'Dirt' : { info: "It's dirty.", needs: [ 'Water', 'Earth' ] },
 	'Steam' : { info: "Caution, may be hot", needs: [ 'Fire', 'Water' ] },
 	'Energy' : { info: "You've got the power", needs: [ 'Air', 'Fire' ] },
 	'Lava' : { info: "What have you done?!", needs: [ 'Earth', 'Fire' ] },
 	'Cloud' : { info: "Up in the air", needs: [ 'Steam', 'Air' ] },
+	'Puddle' : { info: "Kids love it", needs: [ 'Water', 'Water' ] },
+	'Trees' : { info: "Climb with caution", needs: [ 'Earth', 'Puddle' ] },
+	'Power' : { info: "Well, Time for Humans to kill the planet", needs: [ 'Energy', 'Windmill' ] },
+	'Animals' : { info: "Who wants a Puppy?", needs: [ 'Trees', 'Air' ] },
+	'Human' : { info: "Tribal or More?", needs: [ 'Animal', 'House' ] },
+	'House' : { info: "Homes for the future?", needs: [ 'Trees', 'Rocks' ] },
+	'Volcano' : { info: "Stop the Madness!", needs: [ 'Steam', 'Lava' ] },
+	'Rocks' : { info: "Well, We have safety... For now", needs: [ 'Volcano', 'Water' ] },
+	'Bubble' : { info: "It Seems to pop at random occasions", needs: [ 'Air', 'Chew' ] },
+	'Chew'   :{info: "it's chewy", needs: [ 'Human', 'Gum' ] },
+	'Darkness' : { info: "Classic Major Element", needs: [ 'Moon', 'Human' ] },
+	'Light' : { info: "Classic Major Element", needs: [ 'Sun', 'Human' ] },
+	'Space' : { info: "Life outside our own?", needs: [ 'Void', 'Energy' ] },
+	'Sun' : { info: "Hallelujah!", needs: [ 'Energy', 'Gas' ] },
+	'Moon' : { info: "It's Amazing!", needs: [ 'Energy', 'Rock' ] },
+	'Void' : { info: "It's notingness", needs: [ 'Cloud', 'Gas' ] },
+	'Stars' : { info: "Now this is beautiful!", needs: [ 'Void', 'Light' ] },
+	'Spade' : { info: "Huh...", needs: [ 'Rock', 'Rock' ] },
+	'Wood' : { info: "Okay, Stop it", needs: [ 'Trees', 'Human' ] },
+	'Shovel' : { info: "What is that?", needs: [ 'Spade', 'Wood' ] },
+	'Bones' : { info: "Dinosaur bones", needs: [ 'Shovel', 'Dirt' ] },
+	
+	
 	
 	// 'xx' : { info: "xx", needs: [ 'ww', 'zz' ] },
 
 	/*
 	'IBM'    : { info: 'the gigantic company' },
-	'Hackers' : { info: 'People who code while others sleep' },
-	'Coffee' : { info: 'Hackers need this' },
-	'GUI'    : { info: 'Graphical User Interface. Because, the CLI sucks, sometimes' },
+	'Hackers' : { info: 'People who code while others sleep illegally' },
+	'Coffee' : { info: 'Hackers need this, If they want to finish' },
+	'GUI'    : { info: 'Graphical User Interface. Because, the CLI sucks sometimes' },
 	'mud'    : { needs: [ 'water', 'earth' ], info: "it's muddy" },
 	'boue'   : { needs: [ 'water', 'earth' ], info: "it's muddy" },
 	'steam'  : { needs: [ 'water', 'fire' ], info: "it's very hot and can burn severely" },
-	'chew'   : { needs: [ 'fire', 'air' ], info: "it's muddy" },
-	'bubble' : { needs: [ 'air', 'chew' ], info: "it's muddy" },
+	  
+	
 	*/	
 	
 };
